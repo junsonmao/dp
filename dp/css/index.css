@@ -1,0 +1,147 @@
+html,body{height:100%;overflow:hidden;}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+    body { background:#000033; color:#fff; font-size:1em; font-family: Verdana, Arial, Helvetica, sans-serif; }
+    td,th,caption { font-size:1em; }
+    h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+    address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+    a { color:#fff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    img { border:none; }
+    ol,ul,li { list-style:none; }
+    input, textarea, select, button { font:1em Verdana,Helvetica,Arial,sans-serif; }
+    table { border-collapse:collapse; }
+
+    .clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+    .clearfix { *zoom:1; }
+	
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1548638574318'); /* IE9 */
+  src: url('../font/iconfont.eot?t=1548638574318#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff?t=1548638574318') format('woff'),
+  url('../font/iconfont.ttf?t=1548638574318') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../font/iconfont.svg?t=1548638574318#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'digifacewide';
+    src: url('../font/DigifaceWide.TTF'); 
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+}
+.box {
+  width: 200vw;
+  height:100%;
+  display: flex;
+  justify-content: center;
+}
+.box15 {
+  width:15%;
+  height:100%;
+}
+.box40 {
+  width:40%;
+  height:100%;
+}
+.iframe_box{display: flex;}
+.modeltitle{background:#003366;width:200px;text-indent:1.5em;line-height:2em;position:relative;margin:1.5em 0 1em 0;}
+.modeltitle:before{
+	position:absolute;
+	content:"";
+	width:.5em;
+	height:100%;
+	background:#006699;
+	left:0;
+	top:0;
+}
+
+/*屏幕大小*/
+.container {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+/*header*/
+.header {width: 200vw;height: 3%;}
+.title {position: relative;left: 40%;}
+
+/*值班负责人*/
+.staff{width:33.33%;text-align:center;}
+.subtitle{font-size:.8em;}
+
+/*环境检测*/
+.temperature{width:33.33%;text-align:center;}
+.temperature_number {display: inline-block;}
+.iconfont_now{font-size: 3em;}
+.iconfont_second{font-size: 1.5em;}
+.iconfont_third{font-size: 1.5em;}
+.temperature_font{font-size: 0.5em;}
+.environment{padding:0.2em;margin-top: 2em; font-size: 1.2em;}
+
+/*停车场信息*/
+.parket_table{width:100%;text-align:center;}
+.parket_table tr{background:#003366;border: 2px solid #000033;line-height:2em;}
+
+/*应急突发事件*/
+.iconfont_event {font-size: 2em;width: 10%;}
+.event_title{width: 90%;font-size: 2em;}
+.event_msg{width:70%;font-size: 0.5em;}
+.event_button {font-size: 0.6em;}
+
+/*导游信息*/
+.orderModal{border:.1em solid #fff;border-radius:.5em;padding:.5em;text-align:center;margin-bottom:.5em;}
+.order_tip{width:30%;}
+.order_echarts{width:70%;}
+.order_title{color:#0099CC;}
+.ordernum{font-family: 'digifacewide', serif;font-size:2em;}
+.echarts_pie_guide_d{width:100%;height:100%;margin:0 auto;}
+.guide_msg{background-color: #003366;margin-top: 1em;text-align: center;}
+
+/*游客来源*/
+.tourist_map{border: solid;margin-top:1em;min-height: 100%;}
+
+/*游览车信息*/
+.touristcar_table{width:100%;text-align:center;}
+.touristcar_table tr{background:#003366;border: 2px solid #000033;line-height:2em;}
+
+/*游览船信息*/
+.touristboat_table{width:100%;text-align:center;}
+.touristboat_table tr{background:#003366;border: 2px solid #000033;line-height:2em;}
+
+/*地图*/
+ #mapcontainer {
+          width:98%;
+          height: 100%;
+		  margin:0 auto;
+        }
+		
+/*人数*/
+.runNum{
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+        .runNum>li{
+            list-style: none;
+            width: 40px;
+            float: left;
+            position: absolute;
+			font-family: 'digifacewide', serif;
+			background:#0099CC;
+			border-right:5px solid #000033;
+}		
+.tourist_in{width:25%;}
+.tourist_box{width:50%;}
+.tourist_on{width: 25%;}
+
